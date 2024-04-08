@@ -163,6 +163,27 @@
     .skills-list li {
       margin-bottom: 5px;
     }
+
+    .linkedin-button {
+  background-color: #0077B5; /* LinkedIn Blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust this margin as needed */
+}
+
+.linkedin-button img {
+  vertical-align: middle;
+  margin-right: 10px; /* Space between the LinkedIn logo and text */
+}
+
+.linkedin-button:hover {
+  background-color: #005D95; /* Darker shade of LinkedIn Blue on hover */
+}
+
   </style>
 </head>
 
@@ -265,8 +286,10 @@
 
   <div class="content" id="contact">
     <h2>Contact Me</h2>
-    <p>You can reach out to me <a href="mailto:jaredphilipbaker@gmail.com">via email</a> or connect with me on <a href="https://www.linkedin.com/in/jared-baker-ba1964164">
-          <img src="./media/LI-Logo.png" alt="LinkedIn" style="width: 68px; height: 17px;">
+    <p>You can reach out to me <a href="mailto:jaredphilipbaker@gmail.com">via email</a> or connect with me on <button class="linkedin-button" onclick="window.location.href='https://www.linkedin.com/in/jared-baker-ba1964164'">
+        <img src="./media/LI-Logo.png" alt="LinkedIn" style="width: auto; height: 17px;">
+      </button>
+      
       </a>.</p>
   </div>
 
