@@ -183,28 +183,56 @@ color: #007FFF; /* Blue */
   padding: 0 20px;
 }
 
-
-.about-content {
-  padding-right: 20px; /* Add right padding to the about content */
-}
-
 .about-left {
   grid-column: 1;
   text-align: center;
 }
 
+.about-content {
+  padding-right: 20px;
+}
+
+.about-paragraph {
+  text-align: justify;
+}
+
 .about-right {
   grid-column: 2;
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  justify-content: center;
+  align-items: center;
 }
 
-
 .about-right img {
-  max-width: 100%; /* Set maximum width to 100% of its container */
-  height: auto; /* Allow the height to adjust proportionally */
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
-/* Add additional styling as needed */
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-column {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #F8F8F8;
+}
+
+.skills-column h3 {
+  font-size: 1.2em;
+  color: #2b2a2b;
+}
+
+.skills-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-column li {
+  margin-bottom: 5px;
+  color: #464246;
+}
