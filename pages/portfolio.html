@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jared Baker - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+  <div class="header-nav-container">
+    <header>
+      <h1>JARED BAKER</h1>
+      <p>Marketing | Project Management</p>
+    </header>
+
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="./about.html">About Me</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="content" id="portfolio">
+    <div class="grid-container">
+      <!-- Project 1 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 1', 'Brief description of Project 1')">
+          <img src="../media/spruceridgevidgif.gif" alt="GIF of aerial drone footage for Spruce Ridge">
+        </button>
+      </div>
+      <!-- Project 2 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 2', 'Brief description of Project 2')">
+          <img src="../media/BlackHorseFinalgif.gif" alt="GIF of aerial drone footage for Black Horse">
+        </button>
+      </div>
+      <!-- Project 3 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 3', 'Brief description of Project 3')">
+          <img src="../media/PalominoFinalgif.gif" alt="GIF of aerial drone footage for Palomino">
+        </button>
+      </div>
+      <!-- Project 7 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 7', 'Brief description of Project 7')">
+          <img src="../media/KestrelRidgePark_Air-HighRes-1-resize.jpg" alt="Aerial drone image showing new homes and mountains in backdrop">
+        </button>
+      </div>
+      <!-- Project 8 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 8', 'Brief description of Project 8')">
+          <img src="../media/StetsonCommunity-HighRes-2-resize.jpg" alt="Image of a new home community monument">
+        </button>
+      </div>
+      <!-- Project 9 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 9', 'Brief description of Project 9')">
+          <img src="../media/KrestelRidgeMonument-HighRes-1-resize.jpg" alt="Image of a new home community monument">
+        </button>
+      </div>
+      <!-- Project 4 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 4', 'Brief description of Project 4')">
+          <img src="../media/ballardflyer-resize.jpg" alt="Image of a new home floorplan">
+        </button>
+      </div>
+      <!-- Project 5 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 5', 'Brief description of Project 5')">
+          <img src="../media/rteflyer-resize.jpg" alt="Image of a promotional new home sales flyer">
+        </button>
+      </div>
+      <!-- Project 6 -->
+      <div class="grid-item">
+        <button onclick="openModal('Project 6', 'Brief description of Project 6')">
+          <img src="../media/woodberryhills-resize.jpg" alt="Image of a promotional broker flyer">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalProject1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject1')">&times;</span>
+      <h3>Video for Spruce Ridge</h3>
+      <p>This gif showcases a video I produced and directed with a third-party vendor. The video shows the proximity to
+        Mount Tahoma, views from homes, and aerial footage of the community itself.</p>
+      <img src="../media/spruceridgevidgif.gif" alt="GIF of aerial drone footage for Spruce Ridge"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject2')">&times;</span>
+      <h3>Video for Black Horse</h3>
+      <p>This gif showcases a video of Black Horse, a community in Ellensburg, produced and directed by me with footage
+        shot by a third-party vendor. The video shows the entrance, views of Eastern Cascades, and community
+        streetscapes of Black Horse.</p>
+      <img src="../media/BlackHorseFinalgif.gif" alt="GIF of aerial drone footage for Black Horse"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject3')">&times;</span>
+      <h3>Video for Palomino</h3>
+      <p>This gif is showcasing a video for Palomino, a community in Ellensburg. The video was directed by me and shot
+        with the help of a third-party vendor. The video itself showcases a homeowner arriving to their brand new home
+        (fun fact: that's me and my car!), aerial footage of the community itself, and views of the Eastern Cascades
+        from within the community.</p>
+      <img src="../media/PalominoFinalgif.gif" alt="GIF of aerial drone footage for Palomino"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject4')">&times;</span>
+      <h3>Floorplan for Residential Development</h3>
+      <p>A floorplan I created using Adobe Illustrator, based on the architect's design and cleaned up for marketing
+        purposes.</p>
+      <img src="../media/ballardflyer2.jpg" alt="Image of a new home floorplan"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject5')">&times;</span>
+      <h3>New Home Sales Promotion Flyer</h3>
+      <p>A flyer I created for a new home sales promotion called Red Tag, using original designs and corporate assets.
+      </p>
+      <img src="../media/rteflyer.jpg" alt="Image of a promotional new home sales flyer"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject6" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject6')">&times;</span>
+      <h3>Broker Promotion Flyer</h3>
+      <p>A flyer I created for a broker promotion, featuring original copywriting, design, and assets obtained from
+        third-party photography vendors.</p>
+      <img src="../media/woodberryhillsflyer.jpg" alt="Image of a promotional broker flyer"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject7" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject7')">&times;</span>
+      <h3>Photograph of Kestrel Ridge</h3>
+      <p>A photo of the Kestrel Ridge community as part of an overall photography project coordinated with a third-party
+        vendor.</p>
+      <img src="../media/KestrelRidgePark_Air-HighRes-1.jpg"
+        alt="Aerial drone image showing new homes and mountains in backdrop" style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject8" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject8')">&times;</span>
+      <h3>Photograph of Stetson Heights</h3>
+      <p>A photo showcasing the monument of Stetson Heights community, featuring lettering designed by me in Adobe
+        Illustrator and installed through coordination with a signage vendor. Another fun fact - I also live here!</p>
+      <img src="../media/StetsonCommunity-HighRes-2.jpg" alt="Image of a new home community monument"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+
+  <div id="modalProject9" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalProject9')">&times;</span>
+      <h3>Photograph of Kestrel Ridge Community Monument</h3>
+      <p>A photo showcasing the monument of Kestrel Ridge, featuring lettering designed by me and installed through
+        coordination with a signage vendor.</p>
+      <img src="../media/KrestelRidgeMonument-HighRes-1.jpg" alt="Image of a new home community monument"
+        style="max-width: 100%; max-height: 80vh;">
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
+  </footer>
+
+  <script src="../scripts.js"></script>
+</body>
+
+</html>
