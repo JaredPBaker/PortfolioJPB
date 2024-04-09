@@ -22,7 +22,7 @@ text-align: center;
 
 nav {
 width: 70%; /* Set width to 70% */
-text-align: center;
+text-align: right;
 padding: 10px;
 background-color: #333; /* Move background color from nav to this container */
 }
