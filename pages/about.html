@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Jared Baker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="header-nav-container">
+    <header>
+      <h1 style="font-weight: bold;">Jared Baker</h1>
+      <p>Marketing | Project Management</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="content" id="about">
+    <h2>About Me</h2>
+    <p>I'm a self-taught marketing professional focused on driving real and impactful results. Through years of success creating sales enablement materials and taking hundreds of projects from start to finish, I am seeking to leverage my expertise and creativity to contribute to the growth and success of a dynamic organization.</p>
+
+    <ul class="skills-list">
+      <!-- Proficiently skilled -->
+      <li class="skill-proficient">Asana</li>
+      <li class="skill-proficient">Content Marketing</li>
+      <li class="skill-proficient">Copywriting</li>
+      <li class="skill-proficient">CRM (Salesforce, MS Dynamics)</li>
+      <li class="skill-proficient">Email Marketing</li>
+      <li class="skill-proficient">Illustrator</li>
+      <li class="skill-proficient">InDesign</li>
+      <li class="skill-proficient">MS Office</li>
+      <li class="skill-proficient">Project Management</li>
+      <li class="skill-proficient">Vendor Management</li>
+
+      <!-- Competently skilled -->
+      <li class="skill-competent">Python</li>
+      <li class="skill-competent">Web Design</li>
+
+      <!-- Familiar with -->
+      <li class="skill-familiar">CMS</li>
+      <li class="skill-familiar">Data Analysis</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Update current year in the footer
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").innerText = currentYear;
+  </script>
+
+</body>
+
+</html>
