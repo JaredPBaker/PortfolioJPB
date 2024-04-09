@@ -81,6 +81,8 @@
       width: 80%;
       text-align: center;
       /* Center align content */
+      border-radius: 10px;
+      /* Add this line to add rounded corners */
     }
 
     .close {
@@ -130,29 +132,6 @@
       /* Add this line to remove the focus outline */
     }
 
-    
-
-    .modal-content {
-      background-color: #fefefe;
-      margin: 10% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      text-align: center;
-      border-radius: 10px;
-      /* Add this line to add rounded corners */
-    }
-
-    .modal-content img {
-      border-radius: 10px;
-    }
-
-
-    .grid-item button:focus {
-      outline: none;
-    }
-
-
     .skills-list {
       list-style-type: none;
       padding: 0;
@@ -164,13 +143,13 @@
     }
 
     .linkedin-button {
-        border: none;
+      border: none;
     }
 
     .linkedin-button:hover {
-  background-color: #009dff; /* Darker shade of LinkedIn Blue on hover */
-}
-
+      background-color: #009dff;
+      /* Darker shade of LinkedIn Blue on hover */
+    }
   </style>
 </head>
 
@@ -213,71 +192,67 @@
   <div class="content" id="portfolio">
     <h2>Portfolio</h2>
     <div class="grid-container">
-      <!-- Project 1 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 1', 'Brief description of Project 1')">
-          <img src="./media/spruceridgevidgif.gif" alt="Project 1 Image">
-        </button>
-      </div>
-      <!-- Project 2 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 2', 'Brief description of Project 2')">
-          <img src="./media/BlackHorseFinalgif.gif" alt="Project 2 Image">
-        </button>
-      </div>
-      <!-- Project 3 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 3', 'Brief description of Project 3')">
-          <img src="./media/PalominoFinalgif.gif" alt="Project 3 Image">
-        </button>
-      </div>
-      <!-- Additional Projects (Placeholders) -->
-      <!-- Project 4 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 4', 'Brief description of Project 4')">
-          <img src="./media/ballardflyer-resize.jpg" alt="Project 4 Image">
-        </button>
-      </div>
-      <!-- Project 5 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 5', 'Brief description of Project 5')">
-          <img src="./media/rteflyer-resize.jpg" alt="Project 5 Image">
-        </button>
-      </div>
-      <!-- Project 6 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 6', 'Brief description of Project 6')">
-          <img src="./media/woodberryhills-resize.jpg" alt="Project 6 Image">
-        </button>
-      </div>
-      <!-- Project 7 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 7', 'Brief description of Project 7')">
-          <img src="./media/KestrelRidgePark_Air-HighRes-1-resize.jpg" alt="Project 7 Image">
-        </button>
-      </div>
-      <!-- Project 8 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 8', 'Brief description of Project 8')">
-          <img src="./media/StetsonCommunity-HighRes-2-resize.jpg" alt="Project 8 Image">
-        </button>
-      </div>
-      <!-- Project 9 -->
-      <div class="grid-item">
-        <button onclick="openModal('Project 9', 'Brief description of Project 9')">
-          <img src="./media/KrestelRidgeMonument-HighRes-1-resize.jpg" alt="Project 9 Image">
-        </button>
-      </div>
-    </div>
+  <!-- Project 1 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Video for Spruce Ridge" data-description="This gif showcases a video I produced and directed with a third-party vendor. The video shows the proximity to Mount Tahoma, views from homes, and aerial footage of the community itself." data-image="./media/spruceridgevidgif.gif">
+      <img src="./media/spruceridgevidgif.gif" alt="GIF of aerial drone footage for Spruce Ridge">
+    </button>
+  </div>
+  <!-- Project 2 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Video for Black Horse" data-description="This gif showcases a video of Black Horse, a community in Ellensburg, produced and directed by me with footage shot by a third-party vendor. The video shows the entrance, views of Eastern Cascades, and community streetscapes of Black Horse." data-image="./media/BlackHorseFinalgif.gif">
+      <img src="./media/BlackHorseFinalgif.gif" alt="GIF of aerial drone footage for Black Horse">
+    </button>
+  </div>
+  <!-- Project 3 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Video for Palomino" data-description="This gif is showcasing a video for Palomino, a community in Ellensburg. The video was directed by me and shot with the help of a third-party vendor. The video itself showcases a homeowner arriving to their brand new home (fun fact: that's me and my car!), aerial footage of the community itself, and views of the Eastern Cascades from within the community." data-image="./media/PalominoFinalgif.gif">
+      <img src="./media/PalominoFinalgif.gif" alt="GIF of aerial drone footage for Palomino">
+    </button>
+  </div>
+  <!-- Project 4 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Floorplan for Residential Development" data-description="A floorplan I created using Adobe Illustrator, based on the architect's design and cleaned up for marketing purposes." data-image="./media/ballardflyer2.jpg">
+      <img src="./media/ballardflyer2.jpg" alt="Image of a new home floorplan">
+    </button>
+  </div>
+  <!-- Project 5 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="New Home Sales Promotion Flyer" data-description="A flyer I created for a new home sales promotion called Red Tag, using original designs and corporate assets." data-image="./media/rteflyer.jpg">
+      <img src="./media/rteflyer.jpg" alt="Image of a promotional new home sales flyer">
+    </button>
+  </div>
+  <!-- Project 6 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Broker Promotion Flyer" data-description="A flyer I created for a broker promotion, featuring original copywriting, design, and assets obtained from third-party photography vendors." data-image="./media/woodberryhillsflyer.jpg">
+      <img src="./media/woodberryhillsflyer.jpg" alt="Image of a promotional broker flyer">
+    </button>
+  </div>
+  <!-- Project 7 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Photograph of Kestrel Ridge" data-description="A photo of the Kestrel Ridge community as part of an overall photography project coordinated with a third-party vendor." data-image="./media/KestrelRidgePark_Air-HighRes-1.jpg">
+      <img src="./media/KestrelRidgePark_Air-HighRes-1.jpg" alt="Aerial drone image showing new homes and mountains in backdrop">
+    </button>
+  </div>
+  <!-- Project 8 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Photograph of Stetson Heights" data-description="A photo showcasing the monument of Stetson Heights community, featuring lettering designed by me in Adobe Illustrator and installed through coordination with a signage vendor. Another fun fact - I also live here!" data-image="./media/StetsonCommunity-HighRes-2.jpg">
+      <img src="./media/StetsonCommunity-HighRes-2.jpg" alt="Image of a new home community monument">
+    </button>
+  </div>
+  <!-- Project 9 -->
+  <div class="grid-item">
+    <button class="project-button" data-title="Photograph of Kestrel Ridge Community Monument" data-description="A photo showcasing the monument of Kestrel Ridge, featuring lettering designed by me and installed through coordination with a signage vendor." data-image="./media/KrestelRidgeMonument-HighRes-1.jpg">
+      <img src="./media/KrestelRidgeMonument-HighRes-1.jpg" alt="Image of a new home community monument">
+    </button>
+  </div>
+</div>
   </div>
 
   <div class="content" id="contact">
     <h2>Contact Me</h2>
-    <p>You can reach out to me <a href="mailto:jaredphilipbaker@gmail.com">via email</a> or connect with me on <button class="linkedin-button" onclick="window.location.href='https://www.linkedin.com/in/jared-baker-ba1964164'">
-        <img src="./media/LI-Logo.png" alt="LinkedIn" style="width: auto; height: 17px;">
-      </button>
-      
-      </a>.</p>
+    <p>You can reach out to me <a href="mailto:jaredphilipbaker@gmail.com">via email</a> or connect with me on <a href="https://www.linkedin.com/in/jared-baker-ba1964164/">LinkedIn.</a>
+    </p>
   </div>
 
   <footer>
@@ -285,111 +260,44 @@
   </footer>
 
   <!-- Modal Windows -->
-  <!-- Modal Windows -->
-  <div id="modalProject1" class="modal">
+  <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject1')">&times;</span>
-      <h3>Video for Spruce Ridge Community</h3>
-      <p>A video showcasing the proximity to Mount Tahoma, views from homes, and aerial footage of the community itself.</p>
-      <img src="./media/spruceridgevidgif.gif" alt="Project 1 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject2')">&times;</span>
-      <h3>Video for Black Horse Community</h3>
-      <p>A video showcasing the entrance, views of Eastern Cascades, and community streetscapes of Black Horse.</p>
-      <img src="./media/BlackHorseFinalgif.gif" alt="Project 2 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject3')">&times;</span>
-      <h3>Video for Palomino Community</h3>
-      <p>A video showcasing a vehicle arriving at new homes, aerial footage of the community, and views of Eastern Cascades from within Palomino.</p>
-      <img src="./media/PalominoFinalgif.gif" alt="Project 3 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject4')">&times;</span>
-      <h3>Floorplan for Residential Development</h3>
-      <p>A floorplan created using Adobe Illustrator, based on the architect's design and cleaned up for marketing purposes.</p>
-      <img src="./media/ballardflyer2.jpg" alt="Project 4 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject5" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject5')">&times;</span>
-      <h3>Red Tag New Home Sales Promotion Flyer</h3>
-      <p>A flyer created for a new home sales promotion called Red Tag, using original designs and corporate assets.</p>
-      <img src="./media/rteflyer.jpg" alt="Project 5 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject6" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject6')">&times;</span>
-      <h3>Broker Promotion Flyer</h3>
-      <p>A flyer created for a broker promotion, featuring original copywriting, design, and assets obtained from third-party photography vendors.</p>
-      <img src="./media/woodberryhillsflyer.jpg" alt="Project 6 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject7" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject7')">&times;</span>
-      <h3>Photograph of Kestrel Ridge Community</h3>
-      <p>A photo of the Kestrel Ridge community as part of an overall photography project coordinated with a third-party vendor.</p>
-      <img src="./media/KestrelRidgePark_Air-HighRes-1.jpg" alt="Project 7 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject8" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject8')">&times;</span>
-      <h3>Photograph of Stetson Heights Community Monument</h3>
-      <p>A photo showcasing the monument of Stetson Heights community, featuring lettering designed by you and installed through coordination with a signage vendor.</p>
-      <img src="./media/StetsonCommunity-HighRes-2.jpg" alt="Project 8 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-  <div id="modalProject9" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject9')">&times;</span>
-      <h3>Photograph of Kestrel Ridge Community Monument</h3>
-      <p>A photo showcasing the monument of Kestrel Ridge community, featuring lettering designed by you and installed through coordination with a signage vendor.</p>
-      <img src="./media/KrestelRidgeMonument-HighRes-1.jpg" alt="Project 9 Image" style="max-width: 100%; max-height: 80vh;">
-    </div>
-  </div>
-
-      <!-- Adjusted style for the image -->
+      <span class="close" aria-label="Close Modal">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <img id="modalImage" style="max-width: 100%; max-height: 80vh;" alt="Modal Image">
     </div>
   </div>
 
   <script>
-    function openModal(projectId, projectDescription) {
-      var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
+    // Add event listener to all project buttons
+    document.querySelectorAll('.project-button').forEach(button => {
+      button.addEventListener('click', function () {
+        openModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image'));
+      });
+    });
+
+    // Event listener for closing modal
+    document.querySelector('.close').addEventListener('click', closeModal);
+
+    // Event listener for clicking outside modal content
+    window.addEventListener('click', function (event) {
+      if (event.target === document.getElementById('modal')) {
+        closeModal();
+      }
+    });
+
+    function openModal(title, description, imageUrl) {
+      var modal = document.getElementById("modal");
+      document.getElementById("modalTitle").textContent = title;
+      document.getElementById("modalDescription").textContent = description;
+      document.getElementById("modalImage").src = imageUrl;
       modal.style.display = "block";
     }
 
-    function closeModal(modalId) {
-      var modal = document.getElementById(modalId);
+    function closeModal() {
+      var modal = document.getElementById("modal");
       modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-      var modals = document.getElementsByClassName('modal');
-      for (var i = 0; i < modals.length; i++) {
-        var modal = modals[i];
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
     }
 
     // Update current year in the footer
