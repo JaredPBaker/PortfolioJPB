@@ -7,41 +7,36 @@ body {
 
 
 .header-nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #F8F8F8;
-  /* Move background color from header to this container */
-  color: #333;
-  /* Move color from header to this container */
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #F8F8F8; /* Move background color from header to this container */
+color: #333; /* Move color from header to this container */
 }
 
 header {
-  width: 30%;
-  /* Set width to 30% */
-  padding: 20px;
-  text-align: center;
+width: 30%; /* Set width to 30% */
+padding: 20px;
+text-align: center;
 }
 
 nav {
-  width: 70%;
-  /* Set width to 70% */
-  text-align: right;
-  padding: 10px;
-  background-color: #F8F8F8;
-  /* Move background color from nav to this container */
+width: 70%; /* Set width to 70% */
+text-align: right;
+padding: 10px;
+background-color: #F8F8F8; /* Move background color from nav to this container */
 }
 
 nav a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: #CABCB0 0.3s ease;
+color: #333;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #444;
+background-color: #CABCB0;
 }
 
 .content {
@@ -159,16 +154,14 @@ footer {
 
 /* Skill Level Styles */
 .skill-proficient {
-  color: #66CD00;
-  /* Green */
+color: #66CD00; /* Green */
 }
 
 .skill-competent {
-  color: #FFA500;
-  /* Orange */
+color: #FFA500; /* Orange */
 }
 
 .skill-familiar {
-  color: #007FFF;
-  /* Blue */
+color: #007FFF; /* Blue */
 }
+
