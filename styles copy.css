@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #f0f0f0;
 }
 
 
@@ -10,8 +10,8 @@ body {
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #fff; /* Move background color from header to this container */
-color: #333; /* Move color from header to this container */
+background-color: #333; /* Move background color from header to this container */
+color: #fff; /* Move color from header to this container */
 }
 
 header {
@@ -22,13 +22,13 @@ text-align: center;
 
 nav {
 width: 70%; /* Set width to 70% */
-text-align: center;
+text-align: right;
 padding: 10px;
-background-color: #fff; /* Move background color from nav to this container */
+background-color: #333; /* Move background color from nav to this container */
 }
 
 nav a {
-color: #333;
+color: #fff;
 text-decoration: none;
 padding: 10px 20px;
 transition: background-color 0.3s ease;
@@ -37,17 +37,15 @@ transition: background-color 0.3s ease;
 nav a:hover {
 background-color: #444;
 }
-
 .content {
   padding: 20px;
   margin-bottom: 1.5em;
-  color: #fff;
   /* Added margin bottom */
 }
 
 footer {
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 0px 0;
   position: fixed;
