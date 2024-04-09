@@ -146,4 +146,15 @@ body {
     margin-bottom: 5px;
   }
 
+  .skill-low {
+    color: #999999; /* Gray */
+  }
+  
+  .skill-medium {
+    color: #FFD700; /* Gold */
+  }
+  
+  .skill-high {
+    color: #66CD00; /* Green */
+  }
   
