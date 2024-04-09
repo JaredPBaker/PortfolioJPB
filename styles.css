@@ -146,15 +146,17 @@ body {
     margin-bottom: 5px;
   }
 
-  .skill-low {
-    color: #999999; /* Gray */
-  }
-  
-  .skill-medium {
-    color: #FFD700; /* Gold */
-  }
-  
-  .skill-high {
-    color: #66CD00; /* Green */
-  }
+  /* Skill Level Styles */
+.skill-proficient {
+  color: #66CD00; /* Green */
+}
+
+.skill-competent {
+  color: #FFA500; /* Orange */
+}
+
+.skill-familiar {
+  color: #007FFF; /* Blue */
+}
+
   
