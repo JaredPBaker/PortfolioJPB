@@ -250,3 +250,60 @@ color: #007FFF; /* Blue */
   margin-bottom: 5px;
   color: #464246;
 }
+
+
+/* Tablet (landscape) styles */
+@media only screen and (max-width: 1024px) {
+  .header-nav-container {
+    display: block;
+    padding: 10px; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  header {
+    width: 100%; /* Full width for header on tablets */
+    margin-bottom: 20px; /* Add spacing below header */
+  }
+
+  nav {
+    width: 100%; /* Full width for navigation on tablets */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for grid items */
+    gap: 10px; /* Reduce gap between grid items */
+  }
+
+  .grid-item img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+}
+
+/* Mobile (portrait) styles */
+@media only screen and (max-width: 600px) {
+  .header-nav-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Single column for grid items */
+    gap: 10px; /* Reduce gap between grid items */
+  }
+
+  .grid-item img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+}
