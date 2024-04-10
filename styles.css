@@ -280,6 +280,16 @@ color: #007FFF; /* Blue */
     max-width: 100%; /* Ensure images are responsive */
     height: auto;
   }
+
+  .about-container {
+    display: block; /* Ensure stacked layout for about content */
+    padding: 0 10px; /* Add horizontal padding */
+  }
+
+  .about-right {
+    text-align: center; /* Center image on tablet */
+    margin-top: 20px; /* Add space above the image */
+  }
 }
 
 /* Mobile (portrait) styles */
@@ -305,5 +315,15 @@ color: #007FFF; /* Blue */
   .grid-item img {
     max-width: 100%; /* Ensure images are responsive */
     height: auto;
+  }
+
+  .about-container {
+    display: block; /* Ensure stacked layout for about content */
+    padding: 0 10px; /* Add horizontal padding */
+  }
+
+  .about-right {
+    text-align: center; /* Center image on tablet */
+    margin-top: 20px; /* Add space above the image */
   }
 }
