@@ -28,6 +28,14 @@ header h1 {
   color: #2b2a2b;
 }
 
+a.home-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+
+  /* Disable any other visual effects */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
 h2 {
   font-weight: 300;
 }
