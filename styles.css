@@ -17,7 +17,8 @@ color: #464246; /* Move color from header to this container */
 
 header {
 width: 30%; /* Set width to 30% */
-padding: 20px;
+padding-bottom: 20px;
+padding-top: 20px;
 text-align: center;
 }
 
