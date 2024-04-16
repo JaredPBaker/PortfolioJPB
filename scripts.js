@@ -31,3 +31,23 @@ function scrollToSection(id) {
     });
   }
 }
+
+// Testimonial carousel functionality
+let slideIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+
+function showTestimonials() {
+    testimonials.forEach(testimonial => {
+        testimonial.style.display = 'none';
+    });
+
+    slideIndex++;
+    if (slideIndex > testimonials.length) {
+        slideIndex = 1;
+    }
+
+    testimonials[slideIndex - 1].style.display = 'block';
+    setTimeout(showTestimonials, 5000); // Change testimonial every 5 seconds
+}
+
+showTestimonials(); // Start testimonial carousel
