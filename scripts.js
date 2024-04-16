@@ -31,18 +31,19 @@ function scrollToSection(id) {
     });
   }
 }
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const testimonials = document.querySelectorAll('.testimonial');
   let index = 0;
 
   function showTestimonial() {
-      testimonials.forEach((testimonial) => {
-          testimonial.classList.remove('active');
-      });
-      testimonials[index].classList.add('active');
-      index = (index + 1) % testimonials.length; // Move to next testimonial
+    testimonials.forEach((testimonial) => {
+      testimonial.classList.remove('active');
+    });
+    testimonials[index].classList.add('active');
+    index = (index + 1) % testimonials.length;
   }
 
-  setInterval(showTestimonial, 7000); // Show testimonial every 7 seconds
-});
+  setInterval(showTestimonial, 7000); // Rotate testimonials every 7 seconds
+}); // Closing brace for addEventListener
+
+// Ensure the script ends properly
