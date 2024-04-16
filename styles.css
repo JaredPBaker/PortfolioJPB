@@ -328,3 +328,18 @@ color: #007FFF; /* Blue */
     margin-top: 20px; /* Add space above the image */
   }
 }
+
+.testimonial-container {
+  position: relative;
+}
+
+.testimonial {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.testimonial.active {
+  opacity: 1;
+}
+

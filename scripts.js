@@ -32,22 +32,17 @@ function scrollToSection(id) {
   }
 }
 
-// Testimonial carousel functionality
-let slideIndex = 0;
-const testimonials = document.querySelectorAll('.testimonial');
+document.addEventListener("DOMContentLoaded", function() {
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
 
-function showTestimonials() {
-    testimonials.forEach(testimonial => {
-        testimonial.style.display = 'none';
-    });
+  function showTestimonial() {
+      testimonials.forEach((testimonial) => {
+          testimonial.classList.remove('active');
+      });
+      testimonials[index].classList.add('active');
+      index = (index + 1) % testimonials.length; // Move to next testimonial
+  }
 
-    slideIndex++;
-    if (slideIndex > testimonials.length) {
-        slideIndex = 1;
-    }
-
-    testimonials[slideIndex - 1].style.display = 'block';
-    setTimeout(showTestimonials, 5000); // Change testimonial every 5 seconds
-}
-
-showTestimonials(); // Start testimonial carousel
+  setInterval(showTestimonial, 7000); // Show testimonial every 7 seconds
+});
