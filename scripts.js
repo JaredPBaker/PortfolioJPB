@@ -48,3 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
 }); // Closing brace for addEventListener
 
 // Ensure the script ends properly
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
