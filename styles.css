@@ -378,8 +378,7 @@ footer {
   }
 
   nav {
-    text-align: center;
-    padding: 10px;
+    display: none;
   }
 
   .grid-container {
