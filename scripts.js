@@ -31,6 +31,7 @@ function scrollToSection(id) {
     });
   }
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = document.querySelectorAll('.testimonial');
   let index = 0;
