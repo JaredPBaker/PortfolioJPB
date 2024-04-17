@@ -34,7 +34,8 @@ header h1 {
 }
 
 .topnav {
-  background-color: #333;
+  display: none;
+  background-color: #CABCB0;
   overflow: hidden;
 }
 
@@ -42,7 +43,7 @@ header h1 {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -410,6 +411,10 @@ footer {
 
   .testimonial blockquote {
     font-size: 14px;
+  }
+
+  .topnav {
+    display: block; /* Show topnav on mobile screens */
   }
 
   .topnav a:not(:first-child) {
