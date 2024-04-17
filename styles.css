@@ -252,6 +252,31 @@ color: #007FFF; /* Blue */
   color: #464246;
 }
 
+.testimonial-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.testimonial.active {
+  opacity: 1;
+}
+
+.testimonial block-quote {
+  font-size: 22px;
+}
+
+
 
 /* Tablet (landscape) styles */
 @media only screen and (max-width: 1024px) {
@@ -291,6 +316,10 @@ color: #007FFF; /* Blue */
     text-align: center; /* Center image on tablet */
     margin-top: 20px; /* Add space above the image */
   }
+
+  .testimonial block size {
+    font-size: 14px;
+    }
 }
 
 /* Mobile (portrait) styles */
@@ -327,23 +356,9 @@ color: #007FFF; /* Blue */
     text-align: center; /* Center image on tablet */
     margin-top: 20px; /* Add space above the image */
   }
+  
+  .testimonial block size {
+    font-size: 16px;
+    }
 }
 
-.testimonial-container {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.testimonial {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.testimonial.active {
-  opacity: 1;
-}
