@@ -12,14 +12,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #F8F8F8;
-  /* Move background color from header to this container */
   color: #464246;
-  /* Move color from header to this container */
 }
 
 header {
   width: 30%;
-  /* Set width to 30% */
   padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
@@ -39,7 +36,6 @@ header h1 {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -50,20 +46,14 @@ header h1 {
   font-size: 17px;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
 a.home-link {
   text-decoration: none;
-  /* Remove underline */
   color: inherit;
-  /* Inherit text color from parent */
-
-  /* Disable any other visual effects */
   cursor: pointer;
-  /* Show pointer cursor on hover */
 }
 
 h2 {
@@ -76,11 +66,9 @@ h3 {
 
 nav {
   width: 70%;
-  /* Set width to 70% */
   text-align: right;
   padding: 10px;
   background-color: #F8F8F8;
-  /* Move background color from nav to this container */
 }
 
 nav a {
@@ -99,7 +87,6 @@ nav a:hover {
   padding: 20px;
   margin-bottom: 1.5em;
   color: #464246;
-  /* Added margin bottom */
 }
 
 footer {
@@ -113,7 +100,6 @@ footer {
   z-index: 999;
 }
 
-/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -134,7 +120,6 @@ footer {
   width: 80%;
   text-align: center;
   border-radius: 10px;
-  /* Add this line to add rounded corners */
 }
 
 .close {
@@ -151,7 +136,6 @@ footer {
   cursor: pointer;
 }
 
-/* Grid Styles */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -165,23 +149,18 @@ footer {
 .grid-item img {
   max-width: 100%;
   max-height: 300px;
-  /* Set maximum height */
   height: auto;
   border-radius: 8px;
 }
 
 .grid-item button {
   border: none;
-  /* Add this line to remove the border */
   background: none;
-  /* Add this line to remove the background color */
   padding: 0;
-  /* Add this line to remove the default padding */
 }
 
 .grid-item button:focus {
   outline: none;
-  /* Add this line to remove the focus outline */
 }
 
 
@@ -206,22 +185,6 @@ footer {
 
 .skills-list li {
   margin-bottom: 5px;
-}
-
-/* Skill Level Styles */
-.skill-proficient {
-  color: #66CD00;
-  /* Green */
-}
-
-.skill-competent {
-  color: #FFA500;
-  /* Orange */
-}
-
-.skill-familiar {
-  color: #007FFF;
-  /* Blue */
 }
 
 .about-container {
@@ -316,7 +279,6 @@ footer {
   .header-nav-container {
     display: block;
     padding: 10px;
-    /* Adjust padding for smaller screens */
     text-align: center;
   }
 
@@ -324,7 +286,6 @@ footer {
     width: 100%;
     /* Full width for header on tablets */
     margin-bottom: 20px;
-    /* Add spacing below header */
   }
 
   nav {
@@ -336,29 +297,22 @@ footer {
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns for grid items */
     gap: 10px;
-    /* Reduce gap between grid items */
   }
 
   .grid-item img {
     max-width: 100%;
-    /* Ensure images are responsive */
     height: auto;
   }
 
   .about-container {
     display: block;
-    /* Ensure stacked layout for about content */
     padding: 0 10px;
-    /* Add horizontal padding */
   }
 
   .about-right {
     text-align: center;
-    /* Center image on tablet */
     margin-top: 20px;
-    /* Add space above the image */
   }
 
   .testimonial blockquote {
@@ -370,7 +324,6 @@ footer {
 @media only screen and (max-width: 600px) {
   .header-nav-container {
     padding: 10px;
-    /* Adjust padding for smaller screens */
   }
 
   header {
@@ -383,29 +336,22 @@ footer {
 
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
-    /* Single column for grid items */
     gap: 10px;
-    /* Reduce gap between grid items */
   }
 
   .grid-item img {
     max-width: 100%;
-    /* Ensure images are responsive */
     height: auto;
   }
 
   .about-container {
     display: block;
-    /* Ensure stacked layout for about content */
     padding: 0 10px;
-    /* Add horizontal padding */
   }
 
   .about-right {
     text-align: center;
-    /* Center image on tablet */
     margin-top: 20px;
-    /* Add space above the image */
   }
 
   .testimonial blockquote {

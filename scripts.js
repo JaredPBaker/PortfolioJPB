@@ -18,7 +18,6 @@ window.onclick = function(event) {
   }
 }
 
-// Update current year in the footer
 var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").innerText = currentYear;
 
@@ -44,10 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     index = (index + 1) % testimonials.length;
   }
 
-  setInterval(showTestimonial, 7000); // Rotate testimonials every 7 seconds
-}); // Closing brace for addEventListener
-
-// Ensure the script ends properly
+  setInterval(showTestimonial, 7000);
+});
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
