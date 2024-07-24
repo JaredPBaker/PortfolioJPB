@@ -17,8 +17,6 @@ body {
 
 header {
   width: 30%;
-  padding-bottom: 20px;
-  padding-top: 20px;
   text-align: center;
 }
 
@@ -204,7 +202,7 @@ footer {
 }
 
 .about-paragraph {
-  text-align: justify;
+  text-align: left;
 }
 
 .about-right {
