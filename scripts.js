@@ -61,3 +61,20 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('nav a');
+
+// Add an event listener to each link
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    // Get the text content of the clicked link
+    const buttonText = event.target.textContent.trim(); 
+
+    // Send the Google Analytics event
+    gtag('event', 'Nav Click', {
+      'event_category': 'Navigation',
+      'event_label': buttonText
+    });
+  });
+});
