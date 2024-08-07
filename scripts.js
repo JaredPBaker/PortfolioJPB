@@ -1,6 +1,13 @@
 function openModal(projectId, projectDescription) {
   var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
   modal.style.display = "block";
+
+  // Send Google Analytics event (Open Modal)
+  gtag('event', 'Open Modal', {
+    'event_category': 'Portfolio Interaction',
+    'event_label': projectId,
+    'event_value': 1 
+  });
 }
 
 function closeModal(modalId) {
