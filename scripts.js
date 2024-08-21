@@ -57,10 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('load', function() {
   var hash = window.location.hash;
-  if (hash === '#modalProject2' || hash === '#modalProject5') {
-    openModal(hash.substring(1)); // Extract the ID from the hash 
+  if (hash) {
+    var projectId = hash.replace('#', '');
+    openModal(projectId, ''); // Assuming 'projectId' is all you need
   }
 });
+
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
