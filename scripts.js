@@ -57,15 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('load', function() {
   var hash = window.location.hash;
-  if (hash === '#modalProject2') {
-    openModal('modalProject2');
-  }
-});
-
-window.addEventListener('load', function() {
-  var hash = window.location.hash;
-  if (hash === '#modalProject5') {
-    openModal('modalProject5');
+  if (hash === '#modalProject2' || hash === '#modalProject5') {
+    openModal(hash.substring(1)); // Extract the ID from the hash 
   }
 });
 
