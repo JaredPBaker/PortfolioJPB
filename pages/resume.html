@@ -167,10 +167,16 @@
     <!-- Add more job entries as needed -->
 
 
-  <!-- Keep the existing footer -->
-
-  <!-- Keep the existing scripts -->
-
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
+    </footer>
+  
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").innerText = currentYear;
+    </script>
+  
+    <script src="../scripts.js"></script>
 </body>
 
 </html>
