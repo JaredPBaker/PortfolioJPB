@@ -53,6 +53,22 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(showTestimonial, 7000);
 });
 
+
+
+window.addEventListener('load', function() {
+  var hash = window.location.hash;
+  if (hash === '#modalProject2') {
+    openModal('modalProject2');
+  }
+});
+
+window.addEventListener('load', function() {
+  var hash = window.location.hash;
+  if (hash === '#modalProject5') {
+    openModal('modalProject5');
+  }
+});
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
