@@ -1,13 +1,33 @@
-function openModal(projectId, projectDescription) {
-  var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
-  modal.style.display = "block";
+// function openModal(projectId, projectDescription) {
+//   var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
+//   modal.style.display = "block";
 
-  // Send Google Analytics event (Open Modal)
-  gtag('event', 'Open Modal', {
-    'event_category': 'Portfolio Interaction',
-    'event_label': projectId,
-    'event_value': 1 
-  });
+//   // Send Google Analytics event (Open Modal)
+//   gtag('event', 'Open Modal', {
+//     'event_category': 'Portfolio Interaction',
+//     'event_label': projectId,
+//     'event_value': 1 
+//   });
+// }
+
+function openModal(projectId, projectDescription) {
+  var modalId = projectId.replace(/ /g, '');
+  if (projectId.startsWith('modal')) {
+    modalId = projectId; // If it's already a modal ID, don't modify it
+  } else {
+    modalId = "modal" + modalId;
+  }
+  var modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "block";
+    
+    // Send Google Analytics event (Open Modal)
+    gtag('event', 'Open Modal', {
+      'event_category': 'Portfolio Interaction',
+      'event_label': projectId,
+      'event_value': 1 
+    });
+  }
 }
 
 function closeModal(modalId) {
@@ -57,9 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('load', function() {
   var hash = window.location.hash;
-  if (hash) {
-    var projectId = hash.replace('#', '');
-    openModal(projectId, ''); // Assuming 'projectId' is all you need
+  if (hash === '#modalProject2' || hash === '#modalProject5') {
+    var modalId = hash.substring(1); // Remove the '#' from the hash
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "block";
+    }
   }
 });
 
