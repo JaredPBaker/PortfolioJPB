@@ -1,34 +1,15 @@
-// function openModal(projectId, projectDescription) {
-//   var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
-//   modal.style.display = "block";
-
-//   // Send Google Analytics event (Open Modal)
-//   gtag('event', 'Open Modal', {
-//     'event_category': 'Portfolio Interaction',
-//     'event_label': projectId,
-//     'event_value': 1 
-//   });
-// }
-
 function openModal(projectId, projectDescription) {
-  var modalId = projectId.replace(/ /g, '');
-  if (projectId.startsWith('modal')) {
-    modalId = projectId; // If it's already a modal ID, don't modify it
-  } else {
-    modalId = "modal" + modalId;
-  }
-  var modal = document.getElementById(modalId);
-  if (modal) {
-    modal.style.display = "block";
-    
-    // Send Google Analytics event (Open Modal)
-    gtag('event', 'Open Modal', {
-      'event_category': 'Portfolio Interaction',
-      'event_label': projectId,
-      'event_value': 1 
-    });
-  }
+  var modal = document.getElementById("modal" + projectId.replace(/ /g, ''));
+  modal.style.display = "block";
+
+  // Send Google Analytics event (Open Modal)
+  gtag('event', 'Open Modal', {
+    'event_category': 'Portfolio Interaction',
+    'event_label': projectId,
+    'event_value': 1 
+  });
 }
+
 
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
