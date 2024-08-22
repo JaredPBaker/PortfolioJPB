@@ -33,21 +33,17 @@
           <p>Marketing Professional</p>
         </header>
     
-        <nav>
-          <a href="../index.html">Home</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <!-- <a href="./testimonials.html">Testimonials</a> -->
-          <a href="./contact.html">Contact</a>
-          <!-- <a href="../media/Jareds_Resume_8.6.24.pdf">Resume</a> -->
+        <nav aria-label="Main Navigation">
+          <a href="../index.html" aria-label="View Home">Home</a>
+          <a href="./portfolio.html" aria-label="View Portfolio">Portfolio</a>
+          <a href="./contact.html" aria-label="Contact Me">Contact</a>
         </nav>
       </div>
     
       <div class="topnav" id="myTopnav">
         <a href="../index.html">Home</a>
         <a href="./portfolio.html">Portfolio</a>
-        <!-- <a href="./testimonials.html">Testimonials</a> -->
         <a href="./contact.html">Contact</a>
-        <!-- <a href="../media/Jareds_Resume_8.6.24.pdf">Resume</a> -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           &#9776;
         </a>
@@ -55,14 +51,17 @@
 
   <hr class="separator">
 
-  <div class="content-container">
-    <h2>EDUCATION</h2>
-    <div class="job">
-      <h3>Bachelor of Science in Business Administration, Major in Marketing</h3>
-      <p class="company">Western Governor's University, Salt Lake City, UT</p>
-      <p class="date">2024</p>
-    </div>
-  
+  <main class="content-container">
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="job">
+        <h3>Bachelor of Science in Business Administration, Major in Marketing</h3>
+        <p class="company">Western Governor's University, Salt Lake City, UT</p>
+        <p class="date">2024</p>
+      </div>
+    </section>
+    
+    <section>
     <h2>JOB HISTORY</h2>
     <div class="job">
       <h3>Marketing Consultant</h3>
@@ -117,7 +116,9 @@
       <p class="company">Liberty National Life Insurance, Pensacola, FL</p>
       <p class="date">March 2014 – September 2014</p>
     </div> -->
-  
+  </section>
+
+  <section>
     <h2>SKILLS</h2>
     <div class="skills-container">
       <div class="skills-column">
@@ -163,7 +164,8 @@
         </ul>
       </div>
     </div>
-  </div>
+  </section>
+  </main>
     <!-- Add more job entries as needed -->
 
 

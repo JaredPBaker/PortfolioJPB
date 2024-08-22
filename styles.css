@@ -1,8 +1,18 @@
+:root {
+  --primary-color: #464246;
+  --background-color: #F8F8F8;
+  --accent-color: #CABCB0;
+  --text-color: #333;
+  --footer-height: 60px;
+}
+
+
 body {
   font-family: 'Karla', sans-serif;
   margin: 0;
-  background-color: #F8F8F8;
-  padding-bottom: 60px;
+  background-color: var(--background-color);
+  padding-bottom: var(--footer-height);
+  line-height: 1.6;
 }
 
 .header-nav-container {
@@ -250,6 +260,10 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
@@ -257,8 +271,17 @@ footer {
   opacity: 1;
 }
 
+.testimonial .author {
+  text-align: right;
+  font-weight: bold;
+}
+
 .testimonial blockquote {
   font-size: 22px;
+  margin: 0;
+  padding: 10px 20px;
+  border-left: 5px solid #CABCB0;
+
 }
 
 .video-container {
@@ -266,8 +289,6 @@ footer {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  max-width: 100%;
-  background: #000;
 }
 
 .video-container iframe {
@@ -296,12 +317,11 @@ footer {
 
 .job .company {
   font-weight: bold;
-  margin-bottom: 5px;
 }
 
 .job .date {
   font-style: italic;
-  margin-bottom: 10px;
+  color: #666;
 }
 
 .job ul {
