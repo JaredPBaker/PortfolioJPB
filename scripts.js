@@ -13,7 +13,29 @@ function openModal(projectId, projectDescription) {
 
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
+  stopVideoInModal(modal);
   modal.style.display = "none";
+}
+
+function stopVideoInModal(modal) {
+  var iframes = modal.querySelectorAll('iframe');
+  iframes.forEach(function(iframe) {
+    var src = iframe.src;
+    if (src.includes('youtube.com')) {
+      iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    } else if (src.includes('vimeo.com')) {
+      iframe.contentWindow.postMessage('{"method":"pause"}', '*');
+    } else if (src.includes('drive.google.com')) {
+      // For Google Drive, replace the iframe with a new one
+      var newIframe = document.createElement('iframe');
+      newIframe.setAttribute('src', src);
+      newIframe.setAttribute('style', iframe.getAttribute('style'));
+      newIframe.setAttribute('frameborder', iframe.getAttribute('frameborder'));
+      newIframe.setAttribute('allow', iframe.getAttribute('allow'));
+      newIframe.setAttribute('allowfullscreen', iframe.getAttribute('allowfullscreen'));
+      iframe.parentNode.replaceChild(newIframe, iframe);
+    }
+  });
 }
 
 window.onclick = function(event) {
@@ -21,6 +43,7 @@ window.onclick = function(event) {
   for (var i = 0; i < modals.length; i++) {
     var modal = modals[i];
     if (event.target == modal) {
+      stopVideoInModal(modal);
       modal.style.display = "none";
     }
   }
