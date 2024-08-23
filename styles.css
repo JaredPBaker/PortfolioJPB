@@ -300,7 +300,105 @@ footer {
   border: 0;
 }
 
-
+/* Resume-specific styles */
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  }
+  .resume-section {
+  margin-bottom: 40px;
+  animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+  }
+  .resume-section h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  }
+  .resume-section h2 i {
+  margin-right: 10px;
+  color: var(--accent-color);
+  }
+  .education-item, .job-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .education-item:hover, .job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  .education-item h3, .job-card h3 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  }
+  .institution, .company {
+  font-weight: bold;
+  color: var(--text-color);
+  }
+  .date {
+  font-style: italic;
+  color: #666;
+  }
+  .job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  }
+  .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  .skills-column {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .skills-column h3 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  }
+  .skills-column ul {
+  list-style-type: none;
+  padding: 0;
+  }
+  .skills-column li {
+  margin-bottom: 8px;
+  color: var(--text-color);
+  }
+  .skills-column li::before {
+  content: "•";
+  color: var(--accent-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  }
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+  .job-grid {
+  grid-template-columns: 1fr;
+  }
+  .skills-container {
+  flex-direction: column;
+  }
+  .skills-column {
+  min-width: 100%;
+  }
+  }
 
 /* New styles for job history and skills */
 .content-container {
