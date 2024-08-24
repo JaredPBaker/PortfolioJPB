@@ -6,7 +6,7 @@ function openModal(projectId, projectDescription) {
   gtag('event', 'Open Modal', {
     'event_category': 'Portfolio Interaction',
     'event_label': projectId,
-    'event_value': 1 
+    'event_value': 1
   });
 }
 
@@ -19,7 +19,7 @@ function closeModal(modalId) {
 
 function stopVideoInModal(modal) {
   var iframes = modal.querySelectorAll('iframe');
-  iframes.forEach(function(iframe) {
+  iframes.forEach(function (iframe) {
     var src = iframe.src;
     if (src.includes('youtube.com')) {
       iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
@@ -38,7 +38,7 @@ function stopVideoInModal(modal) {
   });
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   var modals = document.getElementsByClassName('modal');
   for (var i = 0; i < modals.length; i++) {
     var modal = modals[i];
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   var hash = window.location.hash;
   if (hash === '#modalProject2' || hash === '#modalProject5') {
     var modalId = hash.substring(1); // Remove the '#' from the hash
@@ -107,7 +107,7 @@ const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
     // Get the text content of the clicked link
-    const buttonText = event.target.textContent.trim(); 
+    const buttonText = event.target.textContent.trim();
 
     // Send the Google Analytics event
     gtag('event', 'Nav Click', {
@@ -115,4 +115,117 @@ navLinks.forEach(link => {
       'event_label': buttonText
     });
   });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const jobCards = document.querySelectorAll('.job-card');
+  const modal = document.getElementById('jobModal');
+  const closeBtn = modal.querySelector('.close');
+  const modalTitle = document.getElementById('modalJobTitle');
+  const modalCompany = document.getElementById('modalCompany');
+  const modalDate = document.getElementById('modalDate');
+  const modalAchievements = document.getElementById('modalAchievements');
+
+  // Job data (you can replace this with actual data from your backend)
+  const jobData = {
+    1: {
+      achievements: [
+        "Pioneer a content marketing strategy focused on promoting the Pensacola lifestyle, transforming the brand into a trusted resource for potential homebuyers and significantly boosting engagement.",
+        "Manage automated email marketing campaigns using CRM tools, ensuring personalized communication with leads and clients.",
+        "Conduct website audits and implement SEO best practices, resulting in improved search visibility and user retention.",
+        "Utilize CRM tools to segment audiences and tailor marketing campaigns, increasing open rates and click-through rates."
+      ]
+    },
+    2: {
+      achievements: [
+        "Created and reviewed over 400 marketing materials using Adobe Illustrator, InDesign, and Photoshop, ensuring quality, consistency, and alignment with brand guidelines.",
+        "Optimized marketing processes with project management software, boosting team efficiency by 22% and enhancing workflow and communication.",
+        "Led a campaign to boost Google My Business rating from 3.0 to 4.6 stars in 3 months, increasing reviews by 850% and surpassing the 12-month goal in just one quarter.",
+        "Managed and organized marketing assets including photography, video, and renderings, improving asset retrieval time and supporting organizational goals.",
+        "Spearheaded a rebranding campaign for 15 communities, updating marketing materials, signage, and branded items within one month.",
+        "Designed and executed high-impact paid search campaigns, including Red Tag and Building Memories, significantly increasing lead generation and market visibility.",
+        "Contributed creatively to the naming of floorplans and communities, enhancing product appeal and market differentiation.",
+        "Captured professional photographs of a division of 45+ employees to create an internal directory, improving internal communication and team collaboration.",
+        "Utilized Microsoft Excel to prepare and analyze marketing reports, optimizing campaign performance and meeting deadlines with 100% accuracy."
+      ]
+    },
+    3: {
+      achievements: [
+        "Managed over 3000 incoming internet leads per year and provided prompt email/phone responses.",
+        "Implemented automated drip email campaigns using marketing automation tools, ensuring consistent and timely communication with leads.",
+        "Introduced a call tracking and analytics system, streamlining customer interactions, gathering critical feedback, and significantly improving customer satisfaction and training outcomes.",
+        "Produced and maintained weekly traffic and monthly sales reports, providing insights that improved marketing strategies and enhanced performance tracking.",
+        "Trained and empowered a 20-member sales team on the new enterprise CRM system, resulting in improved adoption and sales effectiveness across the division."
+      ]
+    },
+    4: {
+      achievements: [
+        "Planned and organized sales presentations, showcasing model homes and sales materials to drive interest and close deals.",
+        "Maintained quality customer service and guided buyers through the sales process, improving conversion rates."
+      ]
+    },
+    5: {
+      achievements: [
+        "Conducted strategic business development activities, including lead generation plans and networking efforts, which led to an average of $5 million in new home sales annually.",
+        "Managed and maintained model and community like a personal retail business, increasing sales.",
+        "Conducted weekly customer care calls and community team meetings, improving customer satisfaction scores.",
+        "Maintained inventory of sales collateral and ensured all signage was clean and new, enhancing community appeal."
+      ]
+    },
+    6: {
+      achievements: [
+        "Coordinated various events from intimate gatherings to large corporate functions, increasing guest satisfaction scores.",
+        "Collaborated with cross-functional teams to plan and execute a week-long leadership training event for Big 4 firm PricewaterhouseCoopers' summer interns at all 4 Disney parks, including a \"Chopped\"-style cooking competition, ensuring a seamless, safe, and high-quality experience for clients.",
+        "Awarded multiple times for exceptional guest service, maintaining a high positive feedback rate.",
+        "Provided directions, answered questions, and resolved guest issues, achieving a high problem resolution rate.",
+        "Escorted guests through on-stage and backstage locations, adhering to event agendas, improving event punctuality.",
+        "Partnered with multiple departments to ensure high-quality service and presentation, enhancing event execution efficiency."
+      ]
+    },
+    7: {
+      achievements: [
+        "Interacted with guests to provide them with accurate information about merchandise and other questions about Walt Disney World.",
+        "Sold merchandise at locations throughout Walt Disney World property.",
+        "Made recommendations to guests about merchandise and other topics (e.g., dinner reservations, attractions).",
+        "Stocked merchandise.",
+        "Rearranged fixtures to appropriately fit with new merchandise that comes in.",
+        "Performed light cleaning."
+      ]
+    },
+
+    // Add data for other jobs here
+  };
+
+  jobCards.forEach(card => {
+    card.addEventListener('click', function () {
+      const jobId = this.getAttribute('data-job-id');
+      const jobInfo = jobData[jobId];
+
+      modalTitle.textContent = this.querySelector('h3').textContent;
+      modalCompany.textContent = this.querySelector('.company').textContent;
+      modalDate.textContent = this.querySelector('.date').textContent;
+
+      modalAchievements.innerHTML = '<ul>' +
+        jobInfo.achievements.map(achievement => `<li>${achievement}</li>`).join('') +
+        '</ul>';
+
+      modal.style.display = 'block';
+
+      // Google Analytics event
+      gtag('event', 'Open Job Modal', {
+        'event_category': 'Resume Interaction',
+        'event_label': modalTitle.textContent
+      });
+    });
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = 'none';
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  };
 });
