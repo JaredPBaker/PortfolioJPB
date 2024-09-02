@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
     1: {
       achievements: [
         "Pioneer a content marketing strategy focused on promoting the Pensacola lifestyle, transforming the brand into a trusted resource for potential homebuyers and significantly boosting engagement.",
+        "Design visually compelling print and digital advertising adhering to brand guidelines, enhancing overall marketing aesthetics.",
         "Manage automated email marketing campaigns using CRM tools, ensuring personalized communication with leads and clients.",
         "Conduct website audits and implement SEO best practices, resulting in improved search visibility and user retention.",
         "Utilize CRM tools to segment audiences and tailor marketing campaigns, increasing open rates and click-through rates."
@@ -141,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "Created and reviewed over 400 marketing materials using Adobe Illustrator, InDesign, and Photoshop, ensuring quality, consistency, and alignment with brand guidelines.",
         "Optimized marketing processes with project management software, boosting team efficiency by 22% and enhancing workflow and communication.",
         "Led a campaign to boost Google My Business rating from 3.0 to 4.6 stars in 3 months, increasing reviews by 850% and surpassing the 12-month goal in just one quarter.",
+        "Implemented marketing analytics tools to track KPIs and provide data-driven insights for campaign optimization.",
         "Managed and organized marketing assets including photography, video, and renderings, improving asset retrieval time and supporting organizational goals.",
         "Spearheaded a rebranding campaign for 15 communities, updating marketing materials, signage, and branded items within one month.",
         "Designed and executed high-impact paid search campaigns, including Red Tag and Building Memories, significantly increasing lead generation and market visibility.",
@@ -151,9 +153,13 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     3: {
       achievements: [
-        "Managed over 3000 incoming internet leads per year and provided prompt email/phone responses.",
+        "Managed over 3000 incoming internet leads per year and provided prompt email/phone responses while boosting appointment conversion rates to 12%.",
+        "Leveraged CRM systems to manage customer relationships and optimize the sales funnel, improving lead qualification by 30%.",
+        "Developed and maintained a robust marketing metrics dashboard to track campaign performance and ROI.",
         "Implemented automated drip email campaigns using marketing automation tools, ensuring consistent and timely communication with leads.",
+        "Utilized social listening tools to monitor brand sentiment and engage with customers across social media platforms, increasing positive brand mentions by 40%. ",
         "Introduced a call tracking and analytics system, streamlining customer interactions, gathering critical feedback, and significantly improving customer satisfaction and training outcomes.",
+        "Developed and implemented a lead scoring system, improving the efficiency of the sales funnel by 25%. ",
         "Produced and maintained weekly traffic and monthly sales reports, providing insights that improved marketing strategies and enhanced performance tracking.",
         "Trained and empowered a 20-member sales team on the new enterprise CRM system, resulting in improved adoption and sales effectiveness across the division."
       ]
@@ -161,7 +167,9 @@ document.addEventListener('DOMContentLoaded', function () {
     4: {
       achievements: [
         "Planned and organized sales presentations, showcasing model homes and sales materials to drive interest and close deals.",
-        "Maintained quality customer service and guided buyers through the sales process, improving conversion rates."
+        "Maintained quality customer service and guided buyers through the sales process, improving conversion rates.",
+        "Analyzed market data to ensure community competitiveness and optimize sales strategies.",
+        "Managed accurate and timely contract paperwork, demonstrating attention to detail and organizational skills."
       ]
     },
     5: {
@@ -169,12 +177,15 @@ document.addEventListener('DOMContentLoaded', function () {
         "Conducted strategic business development activities, including lead generation plans and networking efforts, which led to an average of $5 million in new home sales annually.",
         "Managed and maintained model and community like a personal retail business, increasing sales.",
         "Conducted weekly customer care calls and community team meetings, improving customer satisfaction scores.",
-        "Maintained inventory of sales collateral and ensured all signage was clean and new, enhancing community appeal."
+        "Maintained inventory of sales collateral and ensured all signage was clean and new, enhancing community appeal.",
+        "Executed precise contract paperwork and managed earnest money deposits within 24 business hours.",
+        "Consistently met or exceeded monthly sales and closing goals."
       ]
     },
     6: {
       achievements: [
         "Coordinated various events from intimate gatherings to large corporate functions, increasing guest satisfaction scores.",
+        "Supervised and scheduled teams of cast members, ensuring optimal staffing for various events.",
         "Collaborated with cross-functional teams to plan and execute a week-long leadership training event for Big 4 firm PricewaterhouseCoopers' summer interns at all 4 Disney parks, including a \"Chopped\"-style cooking competition, ensuring a seamless, safe, and high-quality experience for clients.",
         "Awarded multiple times for exceptional guest service, maintaining a high positive feedback rate.",
         "Provided directions, answered questions, and resolved guest issues, achieving a high problem resolution rate.",
