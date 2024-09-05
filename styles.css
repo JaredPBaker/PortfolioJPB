@@ -7,8 +7,7 @@
 }
 
 hr {
-  margin-block-end: auto;
-  margin-block-start: auto;
+  margin-block: auto;
 }
 
 body {
@@ -19,12 +18,16 @@ body {
   line-height: 1.6;
 }
 
+.header-nav-container,
+nav {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
 .header-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #F8F8F8;
-  color: #464246;
 }
 
 header {
@@ -35,26 +38,24 @@ header {
 header h1 {
   font-family: "Karla", serif;
   font-weight: 300;
-  font-style: normal;
   color: #2b2a2b;
   font-size: 2.5em;
 }
 
 .topnav {
   display: none;
-  background-color: #F8F8F8;
+  background-color: var(--background-color);
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #333;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: none;
 }
 
 .topnav .icon {
@@ -67,11 +68,7 @@ a.home-link {
   cursor: pointer;
 }
 
-h2 {
-  font-weight: 300;
-}
-
-h3 {
+h2, h3 {
   font-weight: 300;
 }
 
@@ -79,11 +76,10 @@ nav {
   width: 70%;
   text-align: right;
   padding: 10px;
-  background-color: #F8F8F8;
 }
 
 nav a {
-  color: #464246;
+  color: var(--primary-color);
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -91,20 +87,20 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #CABCB0;
+  background-color: var(--accent-color);
 }
 
 .content {
   padding: 20px;
   margin-bottom: 1.5em;
-  color: #464246;
+  color: var(--primary-color);
 }
 
 footer {
-  background-color: #CABCB0;
-  color: #333;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   text-align: center;
-  padding: 0px 0;
+  padding: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -132,15 +128,6 @@ footer {
   background-color: #f0f0f0;
 }
 
-#jobModal .modal-content {
-  max-width: 600px;
-}
-
-#modalAchievements ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
 .modal-content {
   background-color: #fefefe;
   margin: 10% auto;
@@ -155,6 +142,7 @@ footer {
   text-align: left;
 }
 
+#jobModal .modal-content,
 #eduModal .modal-content {
   max-width: 600px;
 }
@@ -210,13 +198,15 @@ footer {
   border-radius: 10px;
 }
 
-.skills-list {
+.skills-list,
+.skills-column ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.skills-list li {
+.skills-list li,
+.skills-column li {
   margin-bottom: 5px;
 }
 
@@ -244,7 +234,6 @@ footer {
   grid-column: 2;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 
@@ -264,7 +253,7 @@ footer {
   flex: 1;
   padding: 10px;
   border-radius: 8px;
-  background-color: #F8F8F8;
+  background-color: var(--background-color);
 }
 
 .skills-column h3 {
@@ -272,23 +261,15 @@ footer {
   color: #2b2a2b;
 }
 
-.skills-column ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .skills-column li {
-  margin-bottom: 5px;
-  color: #464246;
+  color: var(--primary-color);
 }
 
 .testimonial-container {
   position: relative;
   width: 100%;
   margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding: 20px 0 100px;
 }
 
 .testimonial {
@@ -296,10 +277,6 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  -moz-transition: opacity 1s ease;
-  -ms-transition: opacity 1s ease;
-  -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
 
@@ -316,8 +293,7 @@ footer {
   font-size: 22px;
   margin: 0;
   padding: 10px 20px;
-  border-left: 5px solid #CABCB0;
-
+  border-left: 5px solid var(--accent-color);
 }
 
 .video-container {
@@ -340,7 +316,7 @@ footer {
 .resume-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .resume-section {
@@ -353,7 +329,6 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -427,15 +402,18 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.skills-column ul {
+  padding-left: 20px;
+}
+
+#modalAchievements ul {
+  padding-left: 20px;
+}
+
 .skills-column h3 {
   font-size: 1.2em;
   color: var(--primary-color);
   margin-bottom: 15px;
-}
-
-.skills-column ul {
-  list-style-type: none;
-  padding: 0;
 }
 
 .skills-column li {
@@ -464,53 +442,6 @@ footer {
   .skills-column {
     min-width: 100%;
   }
-}
-
-/* New styles for job history and skills */
-/* .content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-} */
-
-.job {
-  margin-bottom: 30px;
-}
-
-.job h3 {
-  margin-bottom: 5px;
-}
-
-.job .company {
-  font-weight: bold;
-}
-
-.job .date {
-  font-style: italic;
-  color: #666;
-}
-
-.job ul {
-  padding-left: 20px;
-}
-
-/* .skills-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
-/* .skills-column {
-  flex-basis: calc(33.33% - 20px);
-  margin-bottom: 20px;
-} */
-
-/* .skills-column h3 {
-  margin-bottom: 10px;
-} */
-
-.skills-column ul {
-  padding-left: 20px;
 }
 
 /* Tablet (landscape) styles */
@@ -576,7 +507,7 @@ footer {
   }
 
   .grid-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 

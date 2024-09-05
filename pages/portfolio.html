@@ -7,31 +7,24 @@
   <title>Portfolio - Jared Baker</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX9YNR3XE7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VX9YNR3XE7');
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VX9YNR3XE7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VX9YNR3XE7');
-</script>
-
 <body>
-
   <div class="header-nav-container">
     <header>
       <a href="../index.html" class="home-link">
         <h1>JARED BAKER</h1>
       </a>
     </header>
-
     <nav aria-label="Main Navigation">
       <a href="../index.html" aria-label="View Home">Home</a>
       <a href="./contact.html" aria-label="Contact Me">Contact</a>
@@ -43,168 +36,150 @@
     <a href="../index.html">Home</a>
     <a href="./contact.html">Contact</a>
     <a href="./resume.html">Resume</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      &#9776;
-    </a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
   <hr class="separator">
 
   <main>
-  <section class="content" id="portfolio">
-    <div class="grid-container">
-      <div class="grid-item">
-        <button onclick="openModal('Project 1', 'Brief description of Project 1')">
-          <img src="../media/spruceridgevidgif.gif" alt="GIF of aerial drone footage for Spruce Ridge">
-        </button>
+    <section class="content" id="portfolio">
+      <div class="grid-container">
+        <div class="grid-item">
+          <button onclick="openModal('Project 1', 'Brief description of Project 1')">
+            <img src="../media/spruceridgevidgif.gif" alt="GIF of aerial drone footage for Spruce Ridge">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 2', 'Brief description of Project 2')">
+            <img src="../media/pensacolagif.gif" alt="GIF of nighttime downtown Pensacola, Florida">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 3', 'Brief description of Project 3')">
+            <img src="../media/PalominoFinalgif.gif" alt="GIF of aerial drone footage for Palomino">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 7', 'Brief description of Project 7')">
+            <img src="../media/KestrelRidgePark_Air-HighRes-1-resize.jpg" alt="Aerial drone image showing new homes and mountains in backdrop">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 8', 'Brief description of Project 8')">
+            <img src="../media/StetsonCommunity-HighRes-2-resize.jpg" alt="Image of a new home community monument">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 9', 'Brief description of Project 9')">
+            <img src="../media/KrestelRidgeMonument-HighRes-1-resize.jpg" alt="Image of a new home community monument">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 4', 'Brief description of Project 4')">
+            <img src="../media/floorplanblur.png" alt="Image of a new home floorplan">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 5', 'Brief description of Project 5')">
+            <img src="../media/googlereviewblur.jpg" alt="Image of a less-than-desirable Google review score">
+          </button>
+        </div>
+        <div class="grid-item">
+          <button onclick="openModal('Project 6', 'Brief description of Project 6')">
+            <img src="../media/brokerblur.png" alt="Image of a promotional broker flyer">
+          </button>
+        </div>
       </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 2', 'Brief description of Project 2')">
-          <img src="../media/pensacolagif.gif" alt="GIF of nighttime downtown Pensacola, Florida">
-          <!-- <img src="../media/BlackHorseFinalgif.gif" alt="GIF of aerial drone footage for Black Horse"> -->
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 3', 'Brief description of Project 3')">
-          <img src="../media/PalominoFinalgif.gif" alt="GIF of aerial drone footage for Palomino">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 7', 'Brief description of Project 7')">
-          <img src="../media/KestrelRidgePark_Air-HighRes-1-resize.jpg"
-            alt="Aerial drone image showing new homes and mountains in backdrop">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 8', 'Brief description of Project 8')">
-          <img src="../media/StetsonCommunity-HighRes-2-resize.jpg" alt="Image of a new home community monument">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 9', 'Brief description of Project 9')">
-          <img src="../media/KrestelRidgeMonument-HighRes-1-resize.jpg" alt="Image of a new home community monument">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 4', 'Brief description of Project 4')">
-          <img src="../media/floorplanblur.png" alt="Image of a new home floorplan">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 5', 'Brief description of Project 5')">
-          <img src="../media/googlereviewblur.jpg" alt="Image of a less-than-desirable Google review score">
-        </button>
-      </div>
-      <div class="grid-item">
-        <button onclick="openModal('Project 6', 'Brief description of Project 6')">
-          <img src="../media/brokerblur.png" alt="Image of a promotional broker flyer">
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div id="modalProject1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject1')">&times;</span>
-      <h3>Strategic Video Production for Spruce Ridge</h3>
-      <p>I conceptualized, produced, and directed this video campaign to showcase the unique selling points of Spruce Ridge. By leveraging aerial drone footage, I highlighted the community's proximity to Mount Tahoma and the stunning views from the homes. This strategic approach not only showcased the property but also the lifestyle it offers, significantly enhancing our marketing impact and increasing potential buyer interest.</p>
-      <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1JQ2wOrULiuGTJCUV32Ih-P0JzdPDz53A/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-      </div>  
-    </div>
-  </div>
-
-  <div id="modalProject2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject2')">&times;</span>
-      <h3>Comprehensive Content Marketing Video for Living in Pensacola Group</h3>
-      
-      <p>I spearheaded this content marketing initiative, developing a strategic video that goes beyond traditional real estate marketing. By showcasing Pensacola's lifestyle, culture, and amenities, I created a powerful narrative that positions our realtor group as local experts. This approach not only attracts potential homebuyers but also engages a wider audience interested in relocating. The video has become a cornerstone of our digital marketing strategy, significantly increasing our online engagement and lead generation.</p>
-
-      <!-- <p>This video showcases Black Horse, a community in Ellensburg, directed and produced by me with footage
-        shot by a third-party vendor. The video shows the entrance, views of Eastern Cascades, and community
-        streetscapes of Black Horse.</p> -->
-      <!-- <img src="../media/BlackHorseFinalgif.gif" alt="GIF of aerial drone footage for Black Horse"
-        style="max-width: 100%; max-height: 80vh;"> -->
-      <div class="video-container">
-        <!-- <iframe src="https://www.youtube.com/embed/zewzewWpQLg?si=kutWo5Q6iAAiqRqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-        <iframe src="https://www.youtube.com/embed/EqIpoerezFQ?si=hkeJxjyenB9b11wp&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+    <div id="modalProject1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject1')">&times;</span>
+        <h3>Strategic Video Production for Spruce Ridge</h3>
+        <p>I conceptualized, produced, and directed this video campaign to showcase the unique selling points of Spruce Ridge. By leveraging aerial drone footage, I highlighted the community's proximity to Mount Tahoma and the stunning views from the homes. This strategic approach not only showcased the property but also the lifestyle it offers, significantly enhancing our marketing impact and increasing potential buyer interest.</p>
+        <div class="video-container">
+          <iframe src="https://drive.google.com/file/d/1JQ2wOrULiuGTJCUV32Ih-P0JzdPDz53A/preview" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="modalProject3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject3')">&times;</span>
-      <h3>Immersive Video for Palomino Community</h3>
-      <p>I conceptualized and directed this dynamic video campaign for the Palomino community in Ellensburg. By combining personal touches (featuring myself as a new homeowner) with sweeping aerial footage, I created an emotional connection with potential buyers while showcasing the community's best features. This strategic approach to visual storytelling has significantly enhanced our marketing efforts, leading to increased interest and inquiries about the Palomino community.</p>
-      <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/766958927?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="width: 100%; height: 100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Palomino by D.R. Horton"></iframe>
-      </div>  
+    <div id="modalProject2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject2')">&times;</span>
+        <h3>Comprehensive Content Marketing Video for Living in Pensacola Group</h3>
+        <p>I spearheaded this content marketing initiative, developing a strategic video that goes beyond traditional real estate marketing. By showcasing Pensacola's lifestyle, culture, and amenities, I created a powerful narrative that positions our realtor group as local experts. This approach not only attracts potential homebuyers but also engages a wider audience interested in relocating. The video has become a cornerstone of our digital marketing strategy, significantly increasing our online engagement and lead generation.</p>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/EqIpoerezFQ?si=hkeJxjyenB9b11wp&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject4')">&times;</span>
-      <h3>Floorplan for Residential Development</h3>
-      <p>Utilizing my expertise in Adobe Illustrator, I transformed complex architectural designs into clear, marketing-friendly floorplans. This project demonstrates my ability to bridge technical information with consumer-friendly visuals, significantly improving our marketing materials' effectiveness and aiding potential buyers in their decision-making process.</p>
-      <img src="../media/ballardflyer2.jpg" alt="Image of a new home floorplan"
-        style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject3')">&times;</span>
+        <h3>Immersive Video for Palomino Community</h3>
+        <p>I conceptualized and directed this dynamic video campaign for the Palomino community in Ellensburg. By combining personal touches (featuring myself as a new homeowner) with sweeping aerial footage, I created an emotional connection with potential buyers while showcasing the community's best features. This strategic approach to visual storytelling has significantly enhanced our marketing efforts, leading to increased interest and inquiries about the Palomino community.</p>
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/766958927?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Palomino by D.R. Horton"></iframe>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject5" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject5')">&times;</span>
-      <h3>Strategic GMB Rating Improvement Campaign</h3>
-      <p>I led a comprehensive campaign to dramatically improve our Google My Business presence. Through a multi-faceted approach involving custom-designed review solicitation materials, proactive reputation management, and customer service enhancements, I surpassed our 12-month goal in just 3 months. This initiative resulted in a 1.6-star rating increase and a 850% increase in reviews, significantly boosting our online visibility and credibility.</p>
-      <img src="../media/googlereview.jpeg" alt="Image of an improved Google My Business page with many more positive reviews"
-        style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject4')">&times;</span>
+        <h3>Floorplan for Residential Development</h3>
+        <p>Utilizing my expertise in Adobe Illustrator, I transformed complex architectural designs into clear, marketing-friendly floorplans. This project demonstrates my ability to bridge technical information with consumer-friendly visuals, significantly improving our marketing materials' effectiveness and aiding potential buyers in their decision-making process.</p>
+        <img src="../media/ballardflyer2.jpg" alt="Image of a new home floorplan">
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject6" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject6')">&times;</span>
-      <h3>Broker Promotion Flyer</h3>
-      <p>A flyer I created for a broker promotion, featuring original copywriting, design, and assets obtained from
-        third-party photography vendors.</p>
-      <img src="../media/woodberryhillsflyer.jpg" alt="Image of a promotional broker flyer"
-        style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject5')">&times;</span>
+        <h3>Strategic GMB Rating Improvement Campaign</h3>
+        <p>I led a comprehensive campaign to dramatically improve our Google My Business presence. Through a multi-faceted approach involving custom-designed review solicitation materials, proactive reputation management, and customer service enhancements, I surpassed our 12-month goal in just 3 months. This initiative resulted in a 1.6-star rating increase and a 850% increase in reviews, significantly boosting our online visibility and credibility.</p>
+        <img src="../media/googlereview.jpeg" alt="Image of an improved Google My Business page with many more positive reviews">
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject7" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject7')">&times;</span>
-      <h3>Photograph of Kestrel Ridge</h3>
-      <p>As part of a larger visual marketing strategy, I coordinated this professional photography project for Kestrel Ridge. By carefully selecting angles and timing, I ensured that this image captures not just the homes, but the lifestyle and natural beauty that make Kestrel Ridge unique. This strategic approach to visual asset creation has significantly enhanced our marketing materials across various platforms.</p>
-      <img src="../media/KestrelRidgePark_Air-HighRes-1.jpg"
-        alt="Aerial drone image showing new homes and mountains in backdrop" style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject6')">&times;</span>
+        <h3>Broker Promotion Flyer</h3>
+        <p>A flyer I created for a broker promotion, featuring original copywriting, design, and assets obtained from third-party photography vendors.</p>
+        <img src="../media/woodberryhillsflyer.jpg" alt="Image of a promotional broker flyer">
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject8" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject8')">&times;</span>
-      <h3>Stetson Heights Community Monument</h3>
-      <p>I designed the custom lettering for this community monument using Adobe Illustrator, translating our brand identity into a physical landmark. By managing the fabrication and installation process with our signage vendor, I ensured that the final product perfectly embodied our vision. This project demonstrates my ability to extend branding from digital to physical spaces, creating cohesive and impactful community identities.</p>
-      <img src="../media/StetsonCommunity-HighRes-2.jpg" alt="Image of a new home community monument"
-        style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject7')">&times;</span>
+        <h3>Photograph of Kestrel Ridge</h3>
+        <p>As part of a larger visual marketing strategy, I coordinated this professional photography project for Kestrel Ridge. By carefully selecting angles and timing, I ensured that this image captures not just the homes, but the lifestyle and natural beauty that make Kestrel Ridge unique. This strategic approach to visual asset creation has significantly enhanced our marketing materials across various platforms.</p>
+        <img src="../media/KestrelRidgePark_Air-HighRes-1.jpg" alt="Aerial drone image showing new homes and mountains in backdrop">
+      </div>
     </div>
-  </div>
 
-  <div id="modalProject9" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modalProject9')">&times;</span>
-      <h3>Kestrel Ridge Community Monument</h3>
-      <p>For Kestrel Ridge, I designed custom lettering that captures the community's essence and oversaw the monument's production and installation. This project showcases my skills in brand identity development, graphic design, and project management. The result is a striking physical representation of the brand that serves as a key landmark and marketing asset for the community.</p>
-      <img src="../media/KrestelRidgeMonument-HighRes-1.jpg" alt="Image of a new home community monument"
-        style="max-width: 100%; max-height: 80vh;">
+    <div id="modalProject8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject8')">&times;</span>
+        <h3>Stetson Heights Community Monument</h3>
+        <p>I designed the custom lettering for this community monument using Adobe Illustrator, translating our brand identity into a physical landmark. By managing the fabrication and installation process with our signage vendor, I ensured that the final product perfectly embodied our vision. This project demonstrates my ability to extend branding from digital to physical spaces, creating cohesive and impactful community identities.</p>
+        <img src="../media/StetsonCommunity-HighRes-2.jpg" alt="Image of a new home community monument">
+      </div>
     </div>
-  </div>
-</main>
+
+    <div id="modalProject9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modalProject9')">&times;</span>
+        <h3>Kestrel Ridge Community Monument</h3>
+        <p>For Kestrel Ridge, I designed custom lettering that captures the community's essence and oversaw the monument's production and installation. This project showcases my skills in brand identity development, graphic design, and project management. The result is a striking physical representation of the brand that serves as a key landmark and marketing asset for the community.</p>
+        <img src="../media/KrestelRidgeMonument-HighRes-1.jpg" alt="Image of a new home community monument">
+      </div>
+    </div>
+  </main>
+
   <footer>
     <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
   </footer>

@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const eduData = {
     1: {
-        diplomaImage: './media/wgudiploma.png'
+        diplomaImage: '../media/wgudiploma.png'
     }
     // Add more education items if needed
 };

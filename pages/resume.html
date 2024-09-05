@@ -7,9 +7,7 @@
     <title>Resume - Jared Baker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="resume.css">
@@ -22,7 +20,6 @@
                 <h1>JARED BAKER</h1>
             </a>
         </header>
-
         <nav aria-label="Main Navigation">
             <a href="../index.html" aria-label="View Home">Home</a>
             <a href="./portfolio.html" aria-label="View Portfolio">Portfolio</a>
@@ -34,9 +31,7 @@
         <a href="../index.html">Home</a>
         <a href="./portfolio.html">Portfolio</a>
         <a href="./contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            &#9776;
-        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <hr class="separator">
@@ -53,51 +48,43 @@
 
         <section class="resume-section experience">
             <h2><i class="fas fa-briefcase"></i> JOB HISTORY</h2>
-
             <div class="job-grid">
                 <div class="job-card" data-job-id="1">
                     <h3>Marketing Consultant</h3>
                     <p class="company">Living In Pensacola Group</p>
                     <p class="date">May 2024 – Present</p>
                 </div>
-
                 <div class="job-card" data-job-id="2">
                     <h3>Marketing Specialist</h3>
                     <p class="company">D.R. Horton</p>
                     <p class="date">May 2022 – April 2024</p>
                 </div>
-
                 <div class="job-card" data-job-id="3">
                     <h3>Online Sales Consultant</h3>
                     <p class="company">D.R. Horton</p>
                     <p class="date">August 2020 – May 2022</p>
                 </div>
-
                 <div class="job-card" data-job-id="4">
                     <h3>Sales Associate</h3>
                     <p class="company">Richmond American Homes</p>
                     <p class="date">December 2019 – April 2020</p>
                 </div>
-
                 <div class="job-card" data-job-id="5">
                     <h3>Community Sales Manager</h3>
                     <p class="company">Taylor Morrison</p>
                     <p class="date">August 2017 – October 2019</p>
                 </div>
-
                 <div class="job-card" data-job-id="6">
                     <h3>Convention Guide</h3>
                     <p class="company">The Walt Disney Company</p>
                     <p class="date">July 2016 – December 2018</p>
                 </div>
-
                 <div class="job-card" data-job-id="7">
                     <h3>Merchandise Host</h3>
                     <p class="company">The Walt Disney Company</p>
                     <p class="date">August 2015 – July 2016</p>
                 </div>
             </div>
-
         </section>
 
         <section class="resume-section skills">
@@ -153,6 +140,9 @@
         <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
     </footer>
 
+    <script>
+        document.getElementById("currentYear").innerText = new Date().getFullYear();
+    </script>
     <script src="../scripts.js"></script>
 
     <div id="jobModal" class="modal">
@@ -174,8 +164,6 @@
             <img id="modalDiploma" src="../media/wgudiploma.PNG" alt="Diploma" style="max-width: 100%; height: auto;">
         </div>
     </div>
-
 </body>
 
 </html>
-</updated_html>
