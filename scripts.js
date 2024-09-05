@@ -125,6 +125,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalCompany = document.getElementById('modalCompany');
   const modalDate = document.getElementById('modalDate');
   const modalAchievements = document.getElementById('modalAchievements');
+  const eduItems = document.querySelectorAll('.education-item');
+  const eduModal = document.getElementById('eduModal');
+  const eduCloseBtn = eduModal.querySelector('.close');
+  const modalEduTitle = document.getElementById('modalEduTitle');
+  const modalInstitution = document.getElementById('modalInstitution');
+  const modalEduDate = document.getElementById('modalEduDate');
+  const modalDiploma = document.getElementById('modalDiploma');
 
   // Job data (you can replace this with actual data from your backend)
   const jobData = {
@@ -207,6 +214,43 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add data for other jobs here
   };
 
+  const eduData = {
+    1: {
+        diplomaImage: './media/wgudiploma.png'
+    }
+    // Add more education items if needed
+};
+
+eduItems.forEach(item => {
+    item.addEventListener('click', function () {
+        const eduId = this.getAttribute('data-edu-id');
+        const eduInfo = eduData[eduId];
+
+        modalEduTitle.textContent = this.querySelector('h3').textContent;
+        modalInstitution.textContent = this.querySelector('.institution').textContent;
+        modalEduDate.textContent = this.querySelector('.date').textContent;
+        modalDiploma.src = eduInfo.diplomaImage;
+
+        eduModal.style.display = 'block';
+
+        // Google Analytics event
+        gtag('event', 'Open Education Modal', {
+            'event_category': 'Resume Interaction',
+            'event_label': modalEduTitle.textContent
+        });
+    });
+});
+
+eduCloseBtn.onclick = function () {
+    eduModal.style.display = 'none';
+};
+
+window.onclick = function (event) {
+    if (event.target == eduModal) {
+        eduModal.style.display = 'none';
+    }
+};
+
   jobCards.forEach(card => {
     card.addEventListener('click', function () {
       const jobId = this.getAttribute('data-job-id');
@@ -240,3 +284,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 });
+

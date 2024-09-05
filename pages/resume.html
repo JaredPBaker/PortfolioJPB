@@ -45,7 +45,7 @@
     <main class="resume-container">
         <section class="resume-section education">
             <h2><i class="fas fa-graduation-cap"></i> EDUCATION</h2>
-            <div class="education-item">
+            <div class="education-item" data-edu-id="1">
                 <h3>Bachelor of Science in Business Administration, Major in Marketing</h3>
                 <p class="institution">Western Governor's University, Salt Lake City, UT</p>
                 <p class="date">2024</p>
@@ -163,6 +163,16 @@
             <p id="modalCompany"></p>
             <p id="modalDate"></p>
             <div id="modalAchievements"></div>
+        </div>
+    </div>
+
+    <div id="eduModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalEduTitle"></h3>
+            <p id="modalInstitution"></p>
+            <p id="modalEduDate"></p>
+            <img id="modalDiploma" src="" alt="Diploma" style="max-width: 100%; height: auto;">
         </div>
     </div>
 

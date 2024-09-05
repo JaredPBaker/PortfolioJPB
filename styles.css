@@ -119,12 +119,12 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.job-card {
+.job-card, .education-item {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.job-card:hover {
+.job-card:hover, .education-item:hover {
   background-color: #f0f0f0;
 }
 
@@ -149,6 +149,16 @@ footer {
 
 .modal-content li {
   text-align: left;
+}
+
+#eduModal .modal-content {
+  max-width: 600px;
+}
+
+#modalDiploma {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .close {
