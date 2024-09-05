@@ -10,6 +10,10 @@ hr {
   margin-block: auto;
 }
 
+.mobile-nav-container {
+  display: none;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   margin: 0;
@@ -561,5 +565,53 @@ footer {
 
   .skills-column {
     flex-basis: 100%;
+  }
+
+  .mobile-nav-container {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .mobile-nav.active {
+    display: block;
+  }
+
+  .mobile-nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .mobile-nav a:last-child {
+    border-bottom: none;
   }
 }
