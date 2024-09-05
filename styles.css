@@ -101,14 +101,38 @@ nav a:hover {
 }
 
 footer {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  text-align: center;
-  padding: 0;
+  background-color: #CABCB0;
+  color: #333;
+  padding: 0px 20px;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  flex: 1;
+  text-align: left;
+}
+
+.social-links {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077B5; /* LinkedIn brand color */
 }
 
 .modal {
@@ -572,12 +596,17 @@ footer {
     position: relative;
   }
 
+  .mobile-nav-wrapper {
+    position: relative;
+  }
+
   .hamburger-menu {
     display: block;
     background: none;
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 1001;
   }
 
   .hamburger-menu span {
@@ -592,11 +621,12 @@ footer {
   .mobile-nav {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    top: 0;
+    right: 0; /* Adjust this value to position the menu next to the hamburger button */
     background-color: #f8f8f8;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    min-width: 200px;
   }
 
   .mobile-nav.active {
@@ -609,9 +639,12 @@ footer {
     text-decoration: none;
     color: #333;
     border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
   }
 
   .mobile-nav a:last-child {
     border-bottom: none;
   }
+
+  
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -27,12 +28,20 @@
         </nav>
     </div>
 
-    <div class="topnav" id="myTopnav">
-        <a href="../index.html">Home</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+    <div class="mobile-nav-container">
+        <div class="mobile-nav-wrapped">
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="mobile-nav">
+                <a href="../index.html" aria-label="View Home">Home</a>
+                <a href="./portfolio.html" aria-label="View Portfolio">Portfolio</a>
+                <a href="./contact.html" aria-label="Contact Me">Contact</a>
+            </nav>
+          </div>
+      </div>
 
     <hr class="separator">
 
@@ -137,7 +146,14 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
+        <div class="copyright">
+          <p>&copy; <span id="currentYear"></span> Jared Baker. All rights reserved.</p>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jared-baker-ba1964164/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
     </footer>
 
     <script>
