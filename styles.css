@@ -115,6 +115,11 @@ footer {
   flex-wrap: wrap;
 }
 
+footer p {
+  margin-block-end: auto;
+  margin-block-start: auto;
+}
+
 .copyright {
   flex: 1;
   text-align: left;
@@ -646,7 +651,7 @@ footer {
   .mobile-nav a:last-child {
     border-bottom: none;
   }
-  
+
   .social-links a {
     color: var(--text-color) !important; /* Force color on mobile */
   }
