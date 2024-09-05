@@ -101,9 +101,9 @@ nav a:hover {
 }
 
 footer {
-  background-color: #CABCB0;
-  color: #333;
-  padding: 0px 20px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 20px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -126,12 +126,13 @@ footer {
 }
 
 .social-links a {
-  color: #333;
+  color: var(--text-color);
   font-size: 24px;
   transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:active {
   color: #0077B5; /* LinkedIn brand color */
 }
 
@@ -644,6 +645,10 @@ footer {
 
   .mobile-nav a:last-child {
     border-bottom: none;
+  }
+  
+  .social-links a {
+    color: var(--text-color) !important; /* Force color on mobile */
   }
 
   
